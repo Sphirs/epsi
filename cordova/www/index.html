@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Air BnB Project</title>
+    </head>
+    <body>
+
+    <!-- Section du formulaire -->
+    <section class="formSearch">
+        <form>
+            <div class="inputForm">
+                <label for="lieu">Lieu : </label>
+                <input type="text" id="lieu" name="lieu" placeholder="Westeros" required>
+            </div>
+            <div class="inputForm">
+                <label for="voyageurs">Voyageurs : </label>
+                <input type="number" min="1" id="voyageurs" name="voyageurs" value="1" required>
+            </div>
+            <div class="inputForm">
+                <label>Date : </label>
+                <div class="titleDate">
+                    Du :
+                </div>
+                <div class="inputDate">
+                    <input type="date" id="du" name="du" >
+                </div>
+                <div class="titleDate">
+                    Au :
+                </div>
+                <div class= "inputDate">
+                    <input type="date" id="au" name="au">
+                </div>
+            </div>
+            <div class="inputForm">
+                <input type="submit" name="submit" value="Rechercher">
+            </div>
+        </form>
+        <div class="loaderForm">
+            <img src="img/loader.gif" alt="Loader"/>
+        </div>
+         <div class="errorForm"></div>
+    </section>
+
+    <!-- Section pour la liste des résultats -->
+    <section class="resultSearch">
+        <h1>Résultats :</h1>
+        <div class="loader">
+            <img src="img/loader.gif" alt="Loader"/>
+        </div>
+        <div class="listResult"></div>
+        <button class="seeFormSearch searchAction">
+            <span class="text">Rechercher</span>
+            <img src="img/search.png" alt="Search"/>
+        </button>
+    </section>
+
+    <!-- Section pour un résultat -->
+    <section class="oneResult">
+        <div class="containerOneResult">
+            <div class="pictureOneResult"></div>
+            <div class="titleOneResult">
+                <div class='itemTitle'></div>
+            </div>
+            <div class="actionOneResult">
+                <button class="addCalendar">
+                    <img src="img/calendar.png" alt="Calendar"/>
+                    <span class="text">Ajouter à l'agenda</span>
+                </button>
+                <div class="loaderAction" rel="calendar">
+                    <img src="img/loader.gif" alt="laoder">
+                    <p class="success">Cet événement a bien été ajouté !</p>
+                    <p class="error">Une erreur est survenue !<br>Veuillez recommencer</p>
+                </div>
+                <button class="shareEvent">
+                    <img src="img/share.png" alt="Share"/>
+                    <span class="text">Partager</span>
+                </button>
+                <div class="loaderAction" rel="share">
+                    <img src="img/loader.gif" alt="laoder">
+                    <p class="success">Le partage a réussi !</p>
+                    <p class="error">Une erreur est survenue !<br>Veuillez recommencer</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="showSearch searchAction">
+                    <img src="img/search.png" alt="Search"/>
+                </button><button class="showList" onclick="showList();">
+                    <img src="img/list.png" alt="List">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

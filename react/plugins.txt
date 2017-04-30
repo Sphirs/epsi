@@ -1,0 +1,24 @@
+DatePIcker :
+
+https://github.com/xgfe/react-native-datepicker
+
+npm install react-native-datepicker --save
+
+
+Calendar : 
+
+https://github.com/appsthatmatter/react-native-calendar-manager
+
+npm install --save https://github.com/jjoe64/react-native-calendar-manager.git
+
+Icons :
+
+https://github.com/oblador/react-native-vector-icons
+
+npm install react-native-vector-icons --save
+
+Share :
+
+https://github.com/anarchicknight/react-native-communications
+
+npm install react-native-communications

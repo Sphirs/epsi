@@ -1,0 +1,9 @@
+Calendar :
+https://www.npmjs.com/package/cordova-plugin-calendar
+
+$ cordova plugin add cordova-plugin-calendar
+
+Share :
+https://www.npmjs.com/package/cordova-plugin-x-socialsharing
+
+$ cordova plugin add cordova-plugin-x-socialsharing
